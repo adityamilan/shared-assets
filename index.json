@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "about": "Index of github.com/adityamilan/shared-assets. Each collection is one GitHub release (tag = collection name); published releases never change. Programs keep downloaded files in %LOCALAPPDATA%\\Milansoft\\shared-assets\\<collection>\\ and must check every file's sha256. Sources are in order of preference; {\"release\": true} means this repository's release of the collection.",
+  "repository": "https://github.com/adityamilan/shared-assets",
+  "local_folder": "%LOCALAPPDATA%\\Milansoft\\shared-assets",
+  "collections": {
+    "image-ai-v1": {
+      "title": "Image AI models and runtime (v1)",
+      "description": "Image upscaling, face detection and face restoration models, and ONNX Runtime with DirectML to run them (Windows x64).",
+      "release": "https://github.com/adityamilan/shared-assets/releases/download/image-ai-v1/",
+      "licence_files": [
+        "LICENSE-onnxruntime.txt",
+        "ThirdPartyNotices-onnxruntime.txt",
+        "LICENSE-Real-ESRGAN.txt",
+        "LICENSE-YuNet.txt",
+        "LICENSE-RestoreFormerPlusPlus.txt"
+      ],
+      "files": [
+        {
+          "name": "onnxruntime.dll",
+          "size": 21111832,
+          "sha256": "302c69f9779d63ef4ab90316e59444c4acbaca7fe3455020d79d10bcfcb00715",
+          "what": "ONNX Runtime 1.24.4 with DirectML (Windows x64): runs the models",
+          "licence": "MIT",
+          "licence_file": "LICENSE-onnxruntime.txt",
+          "sources": [
+            {
+              "url": "https://files.pythonhosted.org/packages/88/ea/33814eb0ec96775eda4c1d30b0d86e91d7d2cd0d84c66d3915aef0e06fa3/onnxruntime_directml-1.24.4-cp312-cp312-win_amd64.whl",
+              "zip_member": "onnxruntime/capi/onnxruntime.dll",
+              "zip_size": 25111930
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "DirectML.dll",
+          "size": 18527776,
+          "sha256": "b73972115320e906a49602f2027a3266622881b0d325ba685e0f165a9482a8d7",
+          "what": "DirectML for ONNX Runtime (graphics card)",
+          "licence": "MIT",
+          "licence_file": "LICENSE-onnxruntime.txt",
+          "sources": [
+            {
+              "url": "https://files.pythonhosted.org/packages/88/ea/33814eb0ec96775eda4c1d30b0d86e91d7d2cd0d84c66d3915aef0e06fa3/onnxruntime_directml-1.24.4-cp312-cp312-win_amd64.whl",
+              "zip_member": "onnxruntime/capi/DirectML.dll",
+              "zip_size": 25111930
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "onnxruntime_providers_shared.dll",
+          "size": 21576,
+          "sha256": "f6bbae3af4c0673b0d1e6ca8db900dc85ad959a395b69d361038ec7995cc2652",
+          "what": "ONNX Runtime provider helper",
+          "licence": "MIT",
+          "licence_file": "LICENSE-onnxruntime.txt",
+          "sources": [
+            {
+              "url": "https://files.pythonhosted.org/packages/88/ea/33814eb0ec96775eda4c1d30b0d86e91d7d2cd0d84c66d3915aef0e06fa3/onnxruntime_directml-1.24.4-cp312-cp312-win_amd64.whl",
+              "zip_member": "onnxruntime/capi/onnxruntime_providers_shared.dll",
+              "zip_size": 25111930
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "realesr-general-x4v3.pth",
+          "size": 4885111,
+          "sha256": "8dc7edb9ac80ccdc30c3a5dca6616509367f05fbc184ad95b731f05bece96292",
+          "what": "Real-ESRGAN general 4x upscaler (strong noise removal), PyTorch",
+          "licence": "BSD-3-Clause",
+          "licence_file": "LICENSE-Real-ESRGAN.txt",
+          "sources": [
+            {
+              "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "realesr-general-wdn-x4v3.pth",
+          "size": 4885111,
+          "sha256": "1641f8c4464b9f097c9fdda5589273713f67cf59f3d909e0bd688f0cee269dca",
+          "what": "Real-ESRGAN general 4x upscaler (light noise removal), PyTorch",
+          "licence": "BSD-3-Clause",
+          "licence_file": "LICENSE-Real-ESRGAN.txt",
+          "sources": [
+            {
+              "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-wdn-x4v3.pth"
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "4xNomos8kSC_fp32_opset17.onnx",
+          "size": 67003044,
+          "sha256": "991860f34f5bf08a726d4f72243424c157ab1aa015d1d1eeab10f68df6516576",
+          "what": "4xNomos8kSC 4x photo upscaler that keeps texture, ONNX",
+          "licence": "CC-BY-4.0",
+          "sources": [
+            {
+              "url": "https://github.com/Phhofm/models/releases/download/4xNomos8kSC/4xNomos8kSC_fp32_opset17.onnx"
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "face_detection_yunet_2023mar.onnx",
+          "size": 232589,
+          "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+          "what": "YuNet face detector (640 x 640), ONNX",
+          "licence": "MIT",
+          "licence_file": "LICENSE-YuNet.txt",
+          "sources": [
+            {
+              "url": "https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx"
+            },
+            {
+              "release": true
+            }
+          ]
+        },
+        {
+          "name": "restoreformer_plus_plus.onnx",
+          "size": 294264232,
+          "sha256": "164818b70d1745da4108a45c9263b05452236d14ac0ffab2202af0ac4a438195",
+          "what": "RestoreFormer++ face restoration (512 x 512), ONNX conversion by FaceFusion",
+          "licence": "Apache-2.0",
+          "licence_file": "LICENSE-RestoreFormerPlusPlus.txt",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/restoreformer_plus_plus.onnx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
