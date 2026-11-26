@@ -35,3 +35,4 @@ licence, which is published with it.
 | Collection | Contents |
 |---|---|
 | [image-ai-v1](https://github.com/adityamilan/shared-assets/releases/tag/image-ai-v1) | Image upscaling (Real-ESRGAN general x4v3, 4xNomos8kSC), face detection (YuNet) and face restoration (RestoreFormer++) models, and ONNX Runtime 1.24.4 with DirectML (Windows x64) |
+| [face-swap-v1](https://github.com/adityamilan/shared-assets/releases/tag/face-swap-v1) | Face detection, landmarks, recognition, swapping, masking, restoration and safety-filter models for face swapping in photos and videos (ONNX). |
