@@ -150,6 +150,188 @@
           ]
         }
       ]
+    },
+    "face-swap-v1": {
+      "title": "Face swap models (v1)",
+      "description": "Face detection, landmarks, recognition, swapping, masking, restoration and safety-filter models for face swapping in photos and videos (ONNX).",
+      "release": "https://github.com/adityamilan/shared-assets/releases/download/face-swap-v1/",
+      "files": [
+        {
+          "name": "inswapper_128_fp16.onnx",
+          "size": 277680829,
+          "sha256": "c4eccca86ad177586c85c28bf1a64a9d9ed237e283a15818d831f7facfd3f420",
+          "what": "Face swapper (128 x 128, half precision), ONNX",
+          "licence": "Non-Commercial",
+          "publisher": "InsightFace",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/inswapper_128_fp16.onnx"
+            }
+          ]
+        },
+        {
+          "name": "arcface_w600k_r50.onnx",
+          "size": 174388474,
+          "sha256": "f1f79dc3b0b79a69f94799af1fffebff09fbd78fd96a275fd8f0cbbea23270d1",
+          "what": "ArcFace w600k r50 face recognition (who is who), ONNX",
+          "licence": "Non-Commercial",
+          "publisher": "InsightFace",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/arcface_w600k_r50.onnx"
+            }
+          ]
+        },
+        {
+          "name": "gfpgan_1.4.onnx",
+          "size": 340299087,
+          "sha256": "accc4757b26bdb89b32b4d3500d4f79c9dff97c1dd7c7104bf9dcb95e3311385",
+          "what": "GFPGAN 1.4 face restoration (512 x 512), ONNX",
+          "licence": "Apache-2.0",
+          "publisher": "TencentARC",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/gfpgan_1.4.onnx"
+            }
+          ]
+        },
+        {
+          "name": "yoloface_8n.onnx",
+          "size": 12659761,
+          "sha256": "821cdbb1e65fbbabdde7dd0933f754797a343e56fd962729c61ffcefcd135929",
+          "what": "YOLOv8n face detector (640 x 640), ONNX",
+          "licence": "GPL-3.0",
+          "publisher": "derronqi",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/yoloface_8n.onnx"
+            }
+          ]
+        },
+        {
+          "name": "2dfan4.onnx",
+          "size": 97904803,
+          "sha256": "678c6fa539d52335a31c980feefdf4a6e02d781d83dce00af8a894f114557285",
+          "what": "2DFAN4 68-point face landmarks, ONNX",
+          "licence": "MIT",
+          "publisher": "breadbread1984",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/2dfan4.onnx"
+            }
+          ]
+        },
+        {
+          "name": "fan_68_5.onnx",
+          "size": 944321,
+          "sha256": "ea05f7d9d014ae1d9cdc6e9c72643d8f00d198b5db3fdd384148ddff499a613e",
+          "what": "FAN 68/5 landmark helper (5 points to 68), ONNX",
+          "licence": "OpenRAIL-M",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/fan_68_5.onnx"
+            }
+          ]
+        },
+        {
+          "name": "xseg_1.onnx",
+          "size": 70324286,
+          "sha256": "c4d1498b8a03b5fe2a3a5d2ef2a0402ab03bd51edaf5b2d8d5fb764702a97dd3",
+          "what": "XSeg occlusion mask (hands, hair or objects in front of the face), ONNX",
+          "licence": "GPL-3.0",
+          "publisher": "DeepFaceLab",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.1.0/xseg_1.onnx"
+            }
+          ]
+        },
+        {
+          "name": "bisenet_resnet_34.onnx",
+          "size": 93632546,
+          "sha256": "4a0b8c958a3c938913bd06a8365dbb3c8761afba6ecbf0d14b3b1f77eb230c96",
+          "what": "BiSeNet ResNet-34 face parsing (face regions), ONNX",
+          "licence": "MIT",
+          "publisher": "yakhyo",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/bisenet_resnet_34.onnx"
+            }
+          ]
+        },
+        {
+          "name": "fairface.onnx",
+          "size": 85170772,
+          "sha256": "b176b1e4b0739496e7943af7ba4ff306271fecf837bca5ec5d9a48201959db37",
+          "what": "FairFace age and gender classifier, ONNX",
+          "licence": "Non-Commercial",
+          "publisher": "dchen236",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/fairface.onnx"
+            }
+          ]
+        },
+        {
+          "name": "open_nsfw.onnx",
+          "size": 23598282,
+          "sha256": "922b01d7b5b1b6aea5875c36564f5e13bdcf4e945b13175ae42bdf7fea5b44c7",
+          "what": "Open NSFW adult-content filter, ONNX",
+          "licence": "BSD-2-Clause",
+          "publisher": "Yahoo",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/open_nsfw.onnx"
+            }
+          ]
+        },
+        {
+          "name": "kim_vocal_2.onnx",
+          "size": 66766794,
+          "sha256": "fbde1fd7d35a6b1785add2225ce03255a01ccef6c8a5fb7b2ccd4e0c1e9097f7",
+          "what": "Kim Vocal 2 voice separation, ONNX",
+          "licence": "Non-Commercial",
+          "publisher": "KimberleyJensen",
+          "sources": [
+            {
+              "release": true
+            },
+            {
+              "url": "https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/kim_vocal_2.onnx"
+            }
+          ]
+        }
+      ]
     }
   }
 }
